@@ -54,7 +54,7 @@
 		<input class="typeahead form-control" name="poblacio" style="text-transform: inherit; background: #fff" type="text" placeholder="Nom, districte o municipi del col·legi*">
 	</div>
 
-	<div id="sivius" style="text-align: center; margin-top: 60px">
+	<div id="sivius" style="text-align: center; margin-top: 40px">
 
 <img src="../sivius.jpg" style="max-width: 200px;
     border: 1px solid #f0f0f0;">
@@ -113,6 +113,7 @@ suggestion: Handlebars.compile('<div><span style="font-size:13px">{{municipi}}</
 });
 $('.typeahead').bind('typeahead:select', function(ev, suggestion) {
 $( "#printo" ).show();
+$( "#sivius" ).hide();
 $("#municipiform").html(suggestion.municipi);
 $("#localform").html(suggestion.local);
 $("#adrecaform").html(suggestion.direccio);
