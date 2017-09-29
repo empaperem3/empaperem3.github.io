@@ -121,12 +121,13 @@ var doc = new jsPDF();
 // doc.addFont('Stencilia.ttf', 'Stencilia', 'normal', 'Identity-H');
 // doc.setFont('Stencilia');
 // doc.text(50,50,'Hello World');
+doc.addImage(imgData, 'PNG', 15, 40, 180, 120);
+
 doc.setLineWidth(3);
 doc.line(20, 20, 190, 20);
 doc.line(20, 280, 190, 280);
 doc.line(20, 18.5, 20, 281.5);
 doc.line(190, 18.5, 190, 281.5);
-doc.addImage(imgData, 'PNG', 75, 40, 60, 60);
 doc.setFont('Helvetica');
 doc.setFontType('bold');
 doc.setFontSize(24)
@@ -138,7 +139,7 @@ var textLines = doc
 doc.text(105,200, textLines, null, null, 'center');
 doc.setFontSize(30)
 doc.setFont('helvetica')
-doc.text(30, 270, 'REFERÈNDUM 1/10/17')
+doc.text(50, 270, 'REFERÈNDUM 1/10/17')
 $( "#target" ).click(function() {
 doc.save(suggestion.local+'.pdf');
 });
