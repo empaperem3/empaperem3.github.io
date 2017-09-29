@@ -10,6 +10,94 @@
 
 
 
+
+
+
+
+input[type=search], input[type=tel], input[type=text], input[type=url], input[type=email], input[type=number], input[type=password], select, textarea {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-color: #fff;
+    border: 0.1rem solid #d1d1d1;
+    border-radius: .4rem;
+    box-shadow: none;
+    box-sizing: inherit;
+    height: 3.8rem;
+    padding: .6rem 1rem;
+    width: 100%;
+}
+
+.tt-suggestion.tt-selectable {
+    border-bottom: 0.1px solid #ccc;
+    padding: 5px 5px;
+    line-height: 19px;
+    cursor: pointer;
+}
+
+
+.tt-suggestion.tt-selectable:hover {
+background: #f4f4f4;
+}
+
+.tt-menu {
+    width: 100%;
+    border: 1px solid #e3e3e3;
+    z-index: 999 !important;
+    background: #fff;
+    max-height: 300px !important;
+    overflow-y: scroll;
+}
+
+input::-webkit-input-placeholder { color: #bebebe; }  /* WebKit, Blink, Edge */
+input:-moz-placeholder { color: #bebebe; }  /* Mozilla Firefox 4 to 18 */
+input::-moz-placeholder { color: #bebebe; }  /* Mozilla Firefox 19+ */
+input:-ms-input-placeholder { color: #bebebe; }  /* Internet Explorer 10-11 */
+input::-ms-input-placeholder { color: #bebebe; }  /* Microsoft Edge */
+
+
+span.twitter-typeahead{width: 100%}
+
+
+#printo p {
+    margin-bottom: 0px;
+}
+
+#printo button {
+    margin-top: 39px;
+}
+
+input.typeahead.form-control.tt-hint {
+color: #bebebe
+}
+
+
+
+div#stepOne {
+    padding: 47px 0px;
+    background: #f4f5f6;
+}
+
+pre#response {
+    padding: 20px 30px;
+    font-size: 13px;
+}
+
+
+.contform {
+    max-width: 510px;
+    margin: 0 auto;
+}
+section#prefetch {
+    min-height: 500px;
+}
+
+
+
+
+
+
+
 div#taulas_filter {
     float: left;
     width: 100%;
