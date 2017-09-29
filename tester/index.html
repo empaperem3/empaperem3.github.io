@@ -83,7 +83,7 @@
 var countries3 = new Bloodhound({
 datumTokenizer: Bloodhound.tokenizers.obj.whitespace('municipi','local'),
 queryTokenizer: Bloodhound.tokenizers.whitespace,
-prefetch: 'coles.json'
+prefetch: '../coles.json'
 });
 $('#prefetch .typeahead').typeahead({
 highlight: true
@@ -129,10 +129,6 @@ doc.line(190, 18.5, 190, 281.5);
 doc.addImage(imgData, 'PNG', 75, 40, 60, 60);
 doc.setFont('Helvetica');
 doc.setFontType('bold');
-doc.setFontSize(60)
-doc.text(40, 120, 'SI VIUS AQUÍ')
-doc.text(40, 142, 'VOTES AQUÍ')
-doc.setFont('courier')
 doc.setFontSize(24)
 doc.text(105,180,suggestion.municipi, null, null, 'center');
 doc.text(105,190,suggestion.local, null, null, 'center');
