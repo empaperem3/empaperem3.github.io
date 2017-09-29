@@ -208,7 +208,7 @@ $( "#comptador" ).html(json.feed.openSearch$totalResults.$t);
 var countries3 = new Bloodhound({
 datumTokenizer: Bloodhound.tokenizers.obj.whitespace('municipi','local'),
 queryTokenizer: Bloodhound.tokenizers.whitespace,
-prefetch: '../coles.json'
+prefetch: 'coles.json'
 });
 $('#prefetch .typeahead').typeahead({
 highlight: true
@@ -226,6 +226,7 @@ suggestion: Handlebars.compile('<div><span style="font-size:13px">{{municipi}}</
 });
 $('.typeahead').bind('typeahead:select', function(ev, suggestion) {
 $( "#printo" ).show();
+$( "#sivius" ).hide();
 $("#municipiform").html(suggestion.municipi);
 $("#localform").html(suggestion.local);
 $("#adrecaform").html(suggestion.direccio);
@@ -274,7 +275,6 @@ doc.save(suggestion.local+'.pdf');
 
 
 </script>
-
 
 
 
