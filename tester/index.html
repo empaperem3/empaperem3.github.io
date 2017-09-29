@@ -107,7 +107,7 @@
 var countries3 = new Bloodhound({
 datumTokenizer: Bloodhound.tokenizers.obj.whitespace('municipi','local'),
 queryTokenizer: Bloodhound.tokenizers.whitespace,
-prefetch: 'http://104.131.38.146/coles.json'
+prefetch: '../coles.json'
 });
 $('#prefetch .typeahead').typeahead({
 highlight: true
